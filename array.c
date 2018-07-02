@@ -13,6 +13,7 @@ int main()
   printf("4 ===>%p \n", &a[0]);
   printf("5 ===>%p \n", &p);    /// address of p
   printf("6 ===>%p \n", *(&p)); // derefrencing the address where p is stored
+
   //////////////////////////////////
   printf("7 ===>%d \n", *(a)); //since a is the name of array and the pointer of the first element, *a == a[0]
   printf("8 ===>%d \n", a[0]); // c give us this nice option to print values in array
@@ -20,5 +21,7 @@ int main()
   printf("10 ===>%d \n", *p);
   printf("11 ===>%d \n", p[0]);
   printf("12 ===>%d \n", *(*(&p))); // derefrencing the address where p is stored  to get the value of p (another address) then derefrencing that address to get the value
+  printf("13 ===>%d \n ", *(a + 1));
+  printf("14 ===>%d \n ", *(a + 1));
   return 0;
 }
